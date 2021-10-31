@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ECG</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="interface.css">
+</head>
+<body>
+
+<div class="body">
+	
+	<div id="head">
+
+		<div id="logo"><img src="data:image/png;base64,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"></div>
+	
+		<div id="text">
+			<p>Interface para ECG - V1.4.5 27/10/2021</p>
+		</div>
+	</div>
+
+	<div id="graf">
+		
+		<!--<div id="Canvas" style="background-image: url(ecg_back.png); position: relative; height: 250px; width: 1000px;"></div>-->
+
+		
+
+
+
+
+	</div>
+
+
+
+	<div id="buttons" class="buttons">
+		<button id="pac1" type="button" onclick="pac1();" class=""> LEITO 1 </button>
+		<button id="pac2" type="button" onclick="pac2();"> LEITO 2 </button>
+		<button id="pac3" type="button" onclick="pac3();"> LEITO 3 </button>
+		<button id="pac4" type="button" onclick="pac4();"> LEITO 4 </button>
+	</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<div class="loading">
+
+	<div id="imgs">
+		<img src="loading2.gif">
+		<img src="loading3.gif">
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		<script type="text/javascript" src="apexcharts.min.js"></script>
+
+		<script type="text/javascript" src="https://gabrielandre-andre.github.io/ECG/dados.html"></script>
+
+		<script type="text/javascript" src="jquery.js"></script>
+
+		<script type="text/javascript" src="wz_jsgraphics.js"></script>
+
+		<script type="text/javascript" src="interface.js"></script>
